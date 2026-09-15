@@ -12,11 +12,19 @@ Senior Java Backend Engineer — 17+ years building and supporting enterprise an
 
 ---
 
-### Featured project
+### Featured projects
 
 **docmanager-api** — Spring Boot 3, PostgreSQL, Docker, GitHub Actions CI
 Repo: https://github.com/hunairali/docmanager-api
 A document/correspondence management REST API with a review-approval workflow, built to demonstrate the modern stack alongside 17 years of enterprise Java/EDMS experience. Full test suite (JUnit 5, Mockito, WebMvcTest, DataJpaTest), OpenAPI docs, multi-stage Dockerfile, and a CI pipeline that builds and tests on every push.
+
+**cts-auth-service** — Spring Boot 3, Spring Security 6, JWT, Docker, GitHub Actions CI
+Repo: https://github.com/hunairali/cts-auth-service
+Standalone JWT authentication microservice — registration, login, and token issuance/validation with Spring Security 6, built to sit in front of other services (like docmanager-api) needing centralized auth. Unit, service, and controller test coverage, a multi-stage Dockerfile, and a CI pipeline that runs the full Maven verify plus a Docker build on every push.
+
+**docmanager-k8s** — Kubernetes, Kustomize, GitHub Actions (kubeconform)
+Repo: https://github.com/hunairali/docmanager-k8s
+Kubernetes manifests to deploy docmanager-api and its Postgres database: Namespace, ConfigMap/Secret, PVC, Deployments and Services, an Ingress, and an HPA, tied together with Kustomize. CI validates every manifest with kubeconform and dry-runs the Kustomize build on every push.
 
 ---
 
